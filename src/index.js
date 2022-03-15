@@ -1,11 +1,3 @@
-/*
- * @Author: gandli
- * @Date: 2022-03-14 11:59:28
- * @LastEditTime: 2022-03-15 18:38:54
- * @LastEditors: gandli
- * @Description: 
- * @FilePath: \gandli\src\index.js
- */
 #!/usr/bin / env node
 
 "use strict";
