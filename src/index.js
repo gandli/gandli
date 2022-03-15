@@ -1,4 +1,12 @@
-#!/usr/bin/env node
+/*
+ * @Author: gandli
+ * @Date: 2022-03-14 11:59:28
+ * @LastEditTime: 2022-03-15 18:38:54
+ * @LastEditors: gandli
+ * @Description: 
+ * @FilePath: \gandli\src\index.js
+ */
+#!/usr/bin / env node
 
 "use strict";
 
@@ -36,7 +44,7 @@ const questions = [
 ];
 
 const data = {
-    name: chalk.bold.green("        gandli"),
+    name: chalk.bold.green("        Xuexin Chen"),
     handle: chalk.white("@gandli"),
     work: `${chalk.white("Senior Front-end Developer at")} ${chalk
         .hex("#2b82b2")
