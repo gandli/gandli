@@ -1,6 +1,6 @@
 {
   "name": "gandli",
-  "version": "1.0.8",
+  "version": "1.0.12",
   "description": "A personal npm card for gandli (@gandli)",
   "main": "./src/index.js",
   "bin": {

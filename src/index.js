@@ -36,11 +36,11 @@ const questions = [
 ];
 
 const data = {
-    name: chalk.bold.green("        Gandli de Sousa Barbosa"),
+    name: chalk.bold.green("        gandli"),
     handle: chalk.white("@gandli"),
     work: `${chalk.white("Senior Front-end Developer at")} ${chalk
         .hex("#2b82b2")
-        .bold("e-Core")}`,
+        .bold("Tobacco")}`,
     blog: chalk.gray("https://medium.com/") + chalk.whiteBright("@gandli"),
     twitter: chalk.gray("https://twitter.com/") + chalk.cyan("gandli"),
     npm: chalk.gray("https://npmjs.com/") + chalk.red("~gandli"),
