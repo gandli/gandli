@@ -1,4 +1,4 @@
-![](https://visitor-badge.glitch.me/badge?page_id=gandli.gandli)
+![badge](https://visitor-badge.glitch.me/badge?page_id=gandli.gandli)
 
 <h2>It's me, @gandli!</h2>
 <!-- <p><em>Software Enginner at <a href="https://securityscorecard.com/">Security Scorecard</a></br>
