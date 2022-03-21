@@ -10,7 +10,7 @@ jobs:
         with:
           node-version: 10
       - run: npm install
-      - run: npm prepublish
+      - run: npm run prepublish
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
