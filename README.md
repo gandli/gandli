@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/gandli?tab=repositories">
-    <img src="https://img.shields.io/badge/Projects-23-blue?style=flat-square" />
+    <img src="https://img.shields.io/badge/Projects-22-blue?style=flat-square" />
   </a>
   <a href="https://github.com/gandli?tab=followers">
     <img src="https://img.shields.io/github/followers/gandli?style=flat-square&label=Followers" />
@@ -34,16 +34,38 @@
 ![Supabase](https://img.shields.io/badge/-Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
 ![Chrome Extensions](https://img.shields.io/badge/-Chrome_Extensions-4285F4?style=flat-square&logo=googlechrome&logoColor=white)
 
-### 🚀 Featured Projects
+### 🚀 Shipped
 
-| Project | Description |
-|---------|-------------|
-| [🦆 AI Proofduck](https://github.com/gandli/ai-proofduck-extension) | AI writing assistant Chrome extension — summarize, proofread, translate with local & cloud AI |
-| [⭐ StarSage](https://github.com/gandli/star-sage-app) | GitHub starred repo manager with AI-powered knowledge management |
-| [💊 MedMate](https://github.com/gandli/med-mate-app) | Chronic disease medication management for patients & families |
-| [🛡️ CyberSec Aggregator](https://github.com/gandli/cybersecurity-aggregator) | Real-time threat intelligence hub with multi-source aggregation |
-| [🔖 Bookmark Extension](https://github.com/gandli/chrome-bookmark-extension) | Smart Chrome bookmark manager with dead link detection & AI tagging |
-| [📊 Infographic](https://github.com/gandli/law-enforcement-infographic) | Data visualization for administrative law enforcement |
+- [ai-proofduck-extension](https://github.com/gandli/ai-proofduck-extension) — AI writing assistant Chrome extension with Chrome built-in AI (Gemini Nano), local WebGPU/WASM models, and online API support
+- [star-sage-app](https://github.com/gandli/star-sage-app) — High-performance GitHub starred repository management panel with AI-enhanced knowledge management
+- [weather-in-calendar](https://github.com/gandli/weather-in-calendar) — Modern web app that seamlessly integrates weather forecasts into calendar events
+- [gandli.github.io](https://github.com/gandli/gandli.github.io) — 🦞 Lobster Diary — Daily work journal of an AI assistant, powered by Hugo
+- [markdown-viewer-extension](https://github.com/gandli/markdown-viewer-extension) — Markdown to perfect Word in one click — Mermaid, Vega, drawio, LaTeX, code highlighting
+- [bird-shield-blocking](https://github.com/gandli/bird-shield-blocking) — Shared blocklist repository for Twitter Bird Shield Chrome extension
+
+### 🔧 In Development
+
+- [med-mate-app](https://github.com/gandli/med-mate-app) — Medication management for chronic disease patients and families
+- [chrome-bookmark-extension](https://github.com/gandli/chrome-bookmark-extension) — Chrome bookmark management with dead link detection, WebDAV sync, AI tags
+- [cybersecurity-aggregator](https://github.com/gandli/cybersecurity-aggregator) — Real-time threat intelligence hub
+- [ai-nutritionist-app](https://github.com/gandli/ai-nutritionist-app) — AI-driven personalized nutrition and health management
+- [law-enforcement-infographic](https://github.com/gandli/law-enforcement-infographic) — Data visualization system for law enforcement using WXT + Vue 3
+- [social-monitoring-system](https://github.com/gandli/social-monitoring-system) — Intelligent monitoring system for illegal activities on social platforms
+- [law-enforcement-app](https://github.com/gandli/law-enforcement-app) — Multi-modal intelligent clue management iOS app
+
+### 💡 Ideas & Concepts
+
+- [quit-smoking-dtx](https://github.com/gandli/quit-smoking-dtx) — Smoking cessation digital therapeutics iOS app
+- [ai-goal-manager](https://github.com/gandli/ai-goal-manager) — AI-driven personal goal management tool
+- [timescape-app](https://github.com/gandli/timescape-app) — Photography app with time-travel imaging and AR
+- [bill-hub](https://github.com/gandli/bill-hub) — Bill management and data analysis tool
+- [canteen-ordering-app](https://github.com/gandli/canteen-ordering-app) — Canteen ordering management system
+- [catholic-app](https://github.com/gandli/catholic-app) — Mobile app for Catholic believers
+
+### 🛠️ Tools & Utilities
+
+- [brew-backup](https://github.com/gandli/brew-backup) — Homebrew backup and restore tool
+- [extensions](https://github.com/gandli/extensions) — Raycast extensions (Memorable Password Generator)
 
 ### 📊 Stats
 
