@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/gandli?tab=repositories">
-    <img src="https://img.shields.io/badge/Projects-25-blue?style=flat-square" />
+    <img src="https://img.shields.io/badge/Ideas-21-blue?style=flat-square" />
   </a>
   <a href="https://github.com/gandli?tab=followers">
     <img src="https://img.shields.io/github/followers/gandli?style=flat-square&label=Followers" />
@@ -32,52 +32,43 @@
 ![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
 ![Swift](https://img.shields.io/badge/-Swift-FA7343?style=flat-square&logo=swift&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/-Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Supabase](https://img.shields.io/badge/-Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
 ![Chrome Extensions](https://img.shields.io/badge/-Chrome_Extensions-4285F4?style=flat-square&logo=googlechrome&logoColor=white)
 
 ### 🚀 Shipped
 
-| Project | Description |
-|---------|-------------|
-| [ai-proofduck-extension](https://github.com/gandli/ai-proofduck-extension) | 🦆 AI writing assistant Chrome extension with Gemini Nano, WebGPU/WASM, and online API |
-| [gandli.github.io](https://github.com/gandli/gandli.github.io) | 🦞 Lobster Diary — Daily AI assistant journal with auto cover art and TTS audio |
-| [star-sage-app](https://github.com/gandli/star-sage-app) | ⭐ GitHub starred repo management with AI knowledge enhancement |
-| [weather-in-calendar](https://github.com/gandli/weather-in-calendar) | 🌤️ Weather forecasts inside your calendar via ICS subscription |
-| [chinese-characters-learner](https://github.com/gandli/chinese-characters-learner) | 📚 Learn 7,000 Chinese characters with Learn, Review, Quiz & Challenge modes |
-| [extensions](https://github.com/gandli/extensions) | 🔐 Raycast extensions (Memorable Password Generator) |
+| # | Project | Description |
+|---|---------|-------------|
+| 1 | [extensions](https://github.com/gandli/extensions) | 🔐 Memorable Password Generator — Raycast extension |
 
 ### 🔧 In Development
 
-| Project | Description |
-|---------|-------------|
-| [med-mate-app](https://github.com/gandli/med-mate-app) | 💊 Medication management for chronic disease patients and families |
-| [baby-vault](https://github.com/gandli/baby-vault) | 👶 Privacy-first baby growth tracking — data stays home, AI play recommendations |
-| [url-insight](https://github.com/gandli/url-insight) | 🔗 OpenClaw skill: auto-analyze URLs with AI summaries and action recommendations |
-| [chrome-bookmark-extension](https://github.com/gandli/chrome-bookmark-extension) | 🔖 Bookmark management with dead link detection, WebDAV sync, AI tags |
-| [cybersecurity-aggregator](https://github.com/gandli/cybersecurity-aggregator) | 🛡️ Real-time threat intelligence hub |
-| [ai-nutritionist-app](https://github.com/gandli/ai-nutritionist-app) | 🥗 AI-driven personalized nutrition and health management |
-| [law-enforcement-infographic](https://github.com/gandli/law-enforcement-infographic) | 📊 Data visualization for law enforcement using WXT + Vue 3 |
-| [social-monitoring-system](https://github.com/gandli/social-monitoring-system) | 🔍 Intelligent monitoring system for social platforms |
-| [law-enforcement-app](https://github.com/gandli/law-enforcement-app) | 🚬 Multi-modal intelligent clue management iOS app |
+| # | Project | Description |
+|---|---------|-------------|
+| 2 | [ai-proofduck-extension](https://github.com/gandli/ai-proofduck-extension) | 🦆 AI writing assistant Chrome extension with Gemini Nano, WebGPU, and online API |
+| 3 | [med-mate-app](https://github.com/gandli/med-mate-app) | 💊 Medication management for chronic disease patients and families |
+| 4 | [gandli.github.io](https://github.com/gandli/gandli.github.io) | 🦞 Lobster Diary — Daily AI assistant journal with auto cover art and TTS audio |
+| 5 | [star-sage-app](https://github.com/gandli/star-sage-app) | ⭐ GitHub starred repo management with AI knowledge enhancement |
+| 6 | [chrome-bookmark-extension](https://github.com/gandli/chrome-bookmark-extension) | 🔖 Bookmark management with dead link detection, WebDAV sync, AI tags |
+| 7 | [chinese-characters-learner](https://github.com/gandli/chinese-characters-learner) | 📚 Learn 7,000 Chinese characters with Quiz & Challenge modes |
+| 8 | [cybersecurity-aggregator](https://github.com/gandli/cybersecurity-aggregator) | 🛡️ Real-time threat intelligence hub for cybersecurity professionals |
+| 9 | [ai-nutritionist-app](https://github.com/gandli/ai-nutritionist-app) | 🥗 AI-driven personalized nutrition and health management |
+| 10 | [quit-smoking-dtx](https://github.com/gandli/quit-smoking-dtx) | 🚭 Smoking cessation digital therapeutics iOS app |
+| 11 | [law-enforcement-infographic](https://github.com/gandli/law-enforcement-infographic) | 📊 Data visualization for law enforcement using WXT + Vue 3 |
+| 12 | [social-monitoring-system](https://github.com/gandli/social-monitoring-system) | 🔍 Intelligent monitoring system for social platforms |
+| 13 | [weather-in-calendar](https://github.com/gandli/weather-in-calendar) | 🌤️ Weather forecasts inside your calendar via ICS subscription |
+| 20 | [url-insight](https://github.com/gandli/url-insight) | 🔗 OpenClaw skill: auto-analyze URLs with AI summaries and recommendations |
+| 21 | [baby-vault](https://github.com/gandli/baby-vault) | 👶 Privacy-first baby growth tracking — data stays home, AI play coach |
 
 ### 💡 Ideas & Concepts
 
-| Project | Description |
-|---------|-------------|
-| [quit-smoking-dtx](https://github.com/gandli/quit-smoking-dtx) | 🚭 Smoking cessation digital therapeutics iOS app |
-| [ai-goal-manager](https://github.com/gandli/ai-goal-manager) | 🎯 AI-driven personal goal management tool |
-| [bill-hub](https://github.com/gandli/bill-hub) | 💰 Bill management with AI spending analysis |
-| [timescape-app](https://github.com/gandli/timescape-app) | 📸 Time-travel photography with AR |
-| [canteen-ordering-app](https://github.com/gandli/canteen-ordering-app) | 🍱 Canteen ordering management system |
-| [catholic-app](https://github.com/gandli/catholic-app) | ✝️ Mobile app for Catholic believers |
-
-### 🛠️ Tools & Utilities
-
-| Project | Description |
-|---------|-------------|
-| [brew-backup](https://github.com/gandli/brew-backup) | 🍺 Homebrew backup and restore tool |
-| [markdown-viewer-extension](https://github.com/gandli/markdown-viewer-extension) | 📝 Markdown to Word — Mermaid, LaTeX, code highlighting |
-| [bird-shield-blocking](https://github.com/gandli/bird-shield-blocking) | 🐦 Shared blocklist for Twitter Bird Shield extension |
+| # | Project | Description |
+|---|---------|-------------|
+| 14 | [ai-goal-manager](https://github.com/gandli/ai-goal-manager) | 🎯 AI-driven personal goal management tool |
+| 15 | [bill-hub](https://github.com/gandli/bill-hub) | 💰 Bill management with AI spending analysis |
+| 16 | [timescape-app](https://github.com/gandli/timescape-app) | 📸 Time-travel photography with AR |
+| 17 | [law-enforcement-app](https://github.com/gandli/law-enforcement-app) | 🚬 Multi-modal intelligent clue management iOS app |
+| 18 | [catholic-app](https://github.com/gandli/catholic-app) | ✝️ Mobile app for Catholic believers |
+| 19 | [canteen-ordering-app](https://github.com/gandli/canteen-ordering-app) | 🍱 Canteen ordering management system |
 
 ### 📊 Stats
 
@@ -89,5 +80,5 @@
 ---
 
 <p align="center">
-  <em>Building things that matter, one commit at a time.</em>
+  <em>21 ideas, one commit at a time.</em>
 </p>
