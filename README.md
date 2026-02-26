@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/gandli?tab=repositories">
-    <img src="https://img.shields.io/badge/Ideas-0-blue?style=flat-square" />
+    <img src="https://img.shields.io/badge/Ideas-21-blue?style=flat-square" />
   </a>
   <a href="https://github.com/gandli?tab=followers">
     <img src="https://img.shields.io/github/followers/gandli?style=flat-square&label=Followers" />
@@ -38,19 +38,37 @@
 
 | # | Project | Description |
 |---|---------|-------------|
-| - | *Nothing yet* | — |
+| 1 | [homebrew-iflow](https://github.com/gandli/homebrew-iflow) | Homebrew tap for iFlow CLI |
 
 ### 🔧 In Development
 
 | # | Project | Description |
 |---|---------|-------------|
-| - | *Nothing yet* | — |
+| 2 | [ai-nutritionist-app](https://github.com/gandli/ai-nutritionist-app) | AI-driven personalized nutrition and health management tool with dietary tracking, recipe generation, and drug-nutrition interaction detection |
+| 3 | [ai-proofduck-extension](https://github.com/gandli/ai-proofduck-extension) | AI writing assistant Chrome extension with Chrome built-in AI (Gemini Nano), local WebGPU/WASM models, and online API support for real-time summarization, proofreading, translation, and text expansion |
+| 4 | [baby-vault](https://github.com/gandli/baby-vault) | Privacy-first baby growth tracking app — local/LAN storage, AI-powered play recommendations, one-handed operation. Data stays home. |
+| 5 | [chinese-characters-learner](https://github.com/gandli/chinese-characters-learner) | A web-based tool for learning the 7,000 common Chinese characters from the Modern Chinese Common Character Table. Supports Learn, Review, Quiz, and Challenge modes. |
+| 6 | [chrome-bookmark-extension](https://github.com/gandli/chrome-bookmark-extension) | Chrome bookmark management extension with dead link detection, category management, WebDAV sync, and AI-powered tag generation |
+| 7 | [cybersecurity-aggregator](https://github.com/gandli/cybersecurity-aggregator) | Real-time threat intelligence hub aggregating multi-source security information for cybersecurity professionals |
+| 8 | [gandli.github.io](https://github.com/gandli/gandli.github.io) | 🦞 Lobster Diary — Daily work journal of an AI assistant, powered by Hugo with auto-generated cover art and full-text TTS audio |
+| 9 | [law-enforcement-infographic](https://github.com/gandli/law-enforcement-infographic) | Modern data visualization system for law enforcement effectiveness using WXT and Vue 3, featuring dynamic charts, geographic heatmaps, and SaaS-style government reporting |
+| 10 | [med-mate-app](https://github.com/gandli/med-mate-app) | Localized health management tool for chronic disease patients and families, focusing on medication management, symptom tracking, and follow-up reminders |
+| 11 | [quit-smoking-dtx](https://github.com/gandli/quit-smoking-dtx) | Behavior science-based smoking cessation digital therapeutics iOS app with real-time intervention, trend analysis, and DTx compliance |
+| 12 | [social-monitoring-system](https://github.com/gandli/social-monitoring-system) | Intelligent monitoring system for illegal activities on social platforms with NLP analysis, image recognition, and network mapping |
+| 13 | [star-sage-app](https://github.com/gandli/star-sage-app) | High-performance GitHub starred repository management panel with AI-enhanced knowledge management, auto-translation, and smart tagging |
+| 14 | [url-insight](https://github.com/gandli/url-insight) | OpenClaw skill that auto-analyzes URLs — fetches content, generates structured summaries, and provides personalized action recommendations based on user context. |
+| 15 | [weather-in-calendar](https://github.com/gandli/weather-in-calendar) | Modern web app that seamlessly integrates weather forecasts into calendar events with ICS file generation and bilingual support |
 
 ### 💡 Ideas & Concepts
 
 | # | Project | Description |
 |---|---------|-------------|
-| - | *Nothing yet* | — |
+| 16 | [ai-goal-manager](https://github.com/gandli/ai-goal-manager) | AI-driven personal goal management tool integrating planning, journaling, reflection, and growth insights |
+| 17 | [bill-hub](https://github.com/gandli/bill-hub) | Web-based bill management and data analysis tool supporting multi-platform bill import, AI-powered spending analysis, and trend prediction |
+| 18 | [canteen-ordering-app](https://github.com/gandli/canteen-ordering-app) | Canteen ordering management system for online menu browsing, ordering, payment, and meal pickup |
+| 19 | [catholic-app](https://github.com/gandli/catholic-app) | Mobile application for Catholic believers providing Scripture reading, liturgy guides, spiritual growth tools, and community features |
+| 20 | [law-enforcement-app](https://github.com/gandli/law-enforcement-app) | Multi-modal intelligent clue management iOS app for law enforcement officers focusing on evidence collection, analysis, and case association |
+| 21 | [timescape-app](https://github.com/gandli/timescape-app) | Photography app combining time-travel imaging, future prediction, AR technology, and folk culture exploration |
 
 ### 📊 Stats
 
@@ -63,5 +81,5 @@
 ---
 
 <p align="center">
-  <em>0 ideas, one commit at a time.</em>
+  <em>21 ideas, one commit at a time.</em>
 </p>
