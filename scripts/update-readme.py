@@ -5,12 +5,9 @@ Repos are categorized by topics:
   - "shipped"        → 🚀 Shipped
   - "in-development" → 🔧 In Development
   - "idea"           → 💡 Ideas & Concepts
-
-Repos without these topics or with topic "skip-readme" are excluded.
 """
 
 import json
-import os
 import re
 import subprocess
 import sys
@@ -18,40 +15,53 @@ import sys
 OWNER = "gandli"
 
 
-def search_repos_by_topic(topic):
-    """Use GitHub search API to find repos with a specific topic."""
+def get_repos():
+    """Fetch all non-fork public repos via list endpoint (works with GITHUB_TOKEN)."""
     result = subprocess.run(
-        ["gh", "api", f"search/repositories?q=user:{OWNER}+topic:{topic}+fork:false&per_page=100"],
+        ["gh", "api", "--paginate", f"users/{OWNER}/repos?per_page=100&type=public"],
         capture_output=True, text=True
     )
-    repos = []
     try:
-        data = json.loads(result.stdout)
-        for r in data.get("items", []):
-            name = r.get("name", "")
-            if name == OWNER or "skip-readme" in (r.get("topics") or []):
-                continue
-            repos.append({
-                "name": name,
-                "description": r.get("description") or name,
-                "html_url": r.get("html_url", f"https://github.com/{OWNER}/{name}"),
-            })
-    except json.JSONDecodeError as e:
-        print(f"⚠️ Failed to parse search results for topic '{topic}': {e}", file=sys.stderr)
-    return sorted(repos, key=lambda x: x["name"].lower())
+        repos = json.loads(result.stdout)
+    except json.JSONDecodeError:
+        # --paginate may concat multiple JSON arrays, handle that
+        text = result.stdout.strip()
+        if text.startswith("[") and "][" in text:
+            text = text.replace("][", ",")
+        repos = json.loads(text)
+
+    out = {"shipped": [], "in-development": [], "idea": []}
+    for r in repos:
+        if r.get("fork") or r["name"] == OWNER:
+            continue
+        topics = r.get("topics") or []
+        if "skip-readme" in topics:
+            continue
+        entry = {
+            "name": r["name"],
+            "description": r.get("description") or r["name"],
+            "html_url": r["html_url"],
+        }
+        for cat in out:
+            if cat in topics:
+                out[cat].append(entry)
+                break
+
+    for cat in out:
+        out[cat].sort(key=lambda x: x["name"].lower())
+    return out
 
 
 def build_table(entries, start_num=1):
     if not entries:
         return "| # | Project | Description |\n|---|---------|-------------|\n| - | *Nothing yet* | — |\n"
-
     lines = ["| # | Project | Description |", "|---|---------|-------------|"]
     for i, e in enumerate(entries, start=start_num):
         lines.append(f'| {i} | [{e["name"]}]({e["html_url"]}) | {e["description"]} |')
     return "\n".join(lines) + "\n"
 
 
-def update_readme(shipped, in_dev, ideas):
+def update_readme(cats):
     with open("README.md", "r") as f:
         content = f.read()
 
@@ -60,13 +70,11 @@ def update_readme(shipped, in_dev, ideas):
         return re.sub(pattern, rf"\1{table}", content, flags=re.DOTALL)
 
     num = 1
-    content = replace_section(content, "🚀 Shipped", build_table(shipped, num))
-    num += len(shipped)
-    content = replace_section(content, "🔧 In Development", build_table(in_dev, num))
-    num += len(in_dev)
-    content = replace_section(content, "💡 Ideas & Concepts", build_table(ideas, num))
+    for header, key in [("🚀 Shipped", "shipped"), ("🔧 In Development", "in-development"), ("💡 Ideas & Concepts", "idea")]:
+        content = replace_section(content, header, build_table(cats[key], num))
+        num += len(cats[key])
 
-    total = len(shipped) + len(in_dev) + len(ideas)
+    total = sum(len(v) for v in cats.values())
     content = re.sub(r'\d+ ideas, one commit at a time', f'{total} ideas, one commit at a time', content)
     content = re.sub(r'Ideas-\d+-blue', f'Ideas-{total}-blue', content)
 
@@ -76,12 +84,9 @@ def update_readme(shipped, in_dev, ideas):
 
 
 def main():
-    shipped = search_repos_by_topic("shipped")
-    in_dev = search_repos_by_topic("in-development")
-    ideas = search_repos_by_topic("idea")
-
-    print(f"📦 Found: {len(shipped)} shipped, {len(in_dev)} in-dev, {len(ideas)} ideas")
-    total = update_readme(shipped, in_dev, ideas)
+    cats = get_repos()
+    print(f"📦 Found: {len(cats['shipped'])} shipped, {len(cats['in-development'])} in-dev, {len(cats['idea'])} ideas")
+    total = update_readme(cats)
     print(f"✅ README updated with {total} projects")
 
 
