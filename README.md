@@ -73,8 +73,9 @@
 ### 📊 Stats
 
 <p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=gandli&show_icons=true&theme=default&hide_border=true&count_private=true" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gandli&layout=compact&theme=default&hide_border=true" />
+  <a href="https://www.star-history.com/#gandli/gandli">
+    <img src="https://api.star-history.com/svg?repos=gandli/gandli&type=Date" alt="Star History Chart" width="600" />
+  </a>
 </p>
 
 ---
