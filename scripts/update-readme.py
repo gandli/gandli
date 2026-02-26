@@ -15,12 +15,19 @@ import re
 import subprocess
 import sys
 
+OWNER = "gandli"
+CATEGORIES = {
+    "shipped": [],
+    "in-development": [],
+    "idea": [],
+}
 
-def get_repos():
-    """Fetch all non-fork repos for the user."""
+
+def search_repos_by_topic(topic):
+    """Use GitHub search API to find repos with a specific topic."""
     result = subprocess.run(
-        ["gh", "api", "users/gandli/repos", "--paginate",
-         "--jq", '.[] | select(.fork == false) | {name, description, topics, html_url}'],
+        ["gh", "api", f"search/repositories?q=user:{OWNER}+topic:{topic}+fork:false&per_page=100",
+         "--jq", ".items[] | {name, description, html_url, topics}"],
         capture_output=True, text=True
     )
     repos = []
@@ -28,41 +35,12 @@ def get_repos():
         line = line.strip()
         if line:
             try:
-                repos.append(json.loads(line))
+                r = json.loads(line)
+                if r["name"] != OWNER and "skip-readme" not in (r.get("topics") or []):
+                    repos.append(r)
             except json.JSONDecodeError:
                 pass
     return repos
-
-
-def categorize(repos):
-    shipped = []
-    in_dev = []
-    ideas = []
-
-    for r in repos:
-        topics = r.get("topics", []) or []
-        name = r["name"]
-        desc = r.get("description") or name
-        url = r["html_url"]
-
-        if "skip-readme" in topics or name == "gandli":
-            continue
-
-        entry = {"name": name, "desc": desc, "url": url}
-
-        if "shipped" in topics:
-            shipped.append(entry)
-        elif "in-development" in topics:
-            in_dev.append(entry)
-        elif "idea" in topics:
-            ideas.append(entry)
-        # Repos without category topics are skipped
-
-    # Sort alphabetically within each category
-    for lst in (shipped, in_dev, ideas):
-        lst.sort(key=lambda x: x["name"].lower())
-
-    return shipped, in_dev, ideas
 
 
 def build_table(entries, start_num=1):
@@ -71,7 +49,8 @@ def build_table(entries, start_num=1):
 
     lines = ["| # | Project | Description |", "|---|---------|-------------|"]
     for i, e in enumerate(entries, start=start_num):
-        lines.append(f'| {i} | [{e["name"]}]({e["url"]}) | {e["desc"]} |')
+        desc = e.get("description") or e["name"]
+        lines.append(f'| {i} | [{e["name"]}]({e["html_url"]}) | {desc} |')
     return "\n".join(lines) + "\n"
 
 
@@ -80,37 +59,23 @@ def update_readme(shipped, in_dev, ideas):
         content = f.read()
 
     def replace_section(content, header, table):
-        # Match from header to next ### or --- or end
         pattern = rf"(### {re.escape(header)}\n\n)\|.*?(?=\n###|\n---|\Z)"
-        replacement = rf"\1{table}"
-        new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
-        return new_content
+        return re.sub(pattern, rf"\1{table}", content, flags=re.DOTALL)
 
     num = 1
     shipped_table = build_table(shipped, num)
-    num += len(shipped)
+    num += max(len(shipped), 0)
     in_dev_table = build_table(in_dev, num)
-    num += len(in_dev)
+    num += max(len(in_dev), 0)
     ideas_table = build_table(ideas, num)
 
     content = replace_section(content, "🚀 Shipped", shipped_table)
     content = replace_section(content, "🔧 In Development", in_dev_table)
     content = replace_section(content, "💡 Ideas & Concepts", ideas_table)
 
-    # Update the tagline count
     total = len(shipped) + len(in_dev) + len(ideas)
-    content = re.sub(
-        r'\d+ ideas, one commit at a time',
-        f'{total} ideas, one commit at a time',
-        content
-    )
-
-    # Update Ideas badge count
-    content = re.sub(
-        r'Ideas-\d+-blue',
-        f'Ideas-{total}-blue',
-        content
-    )
+    content = re.sub(r'\d+ ideas, one commit at a time', f'{total} ideas, one commit at a time', content)
+    content = re.sub(r'Ideas-\d+-blue', f'Ideas-{total}-blue', content)
 
     with open("README.md", "w") as f:
         f.write(content)
@@ -119,8 +84,9 @@ def update_readme(shipped, in_dev, ideas):
 
 
 def main():
-    repos = get_repos()
-    shipped, in_dev, ideas = categorize(repos)
+    shipped = sorted(search_repos_by_topic("shipped"), key=lambda x: x["name"].lower())
+    in_dev = sorted(search_repos_by_topic("in-development"), key=lambda x: x["name"].lower())
+    ideas = sorted(search_repos_by_topic("idea"), key=lambda x: x["name"].lower())
 
     print(f"📦 Found: {len(shipped)} shipped, {len(in_dev)} in-dev, {len(ideas)} ideas")
 
