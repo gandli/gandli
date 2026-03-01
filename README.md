@@ -67,7 +67,7 @@
 | 17 | [bill-hub](https://github.com/gandli/bill-hub) | Web-based bill management and data analysis tool supporting multi-platform bill import, AI-powered spending analysis, and trend prediction |
 | 18 | [canteen-ordering-app](https://github.com/gandli/canteen-ordering-app) | Canteen ordering management system for online menu browsing, ordering, payment, and meal pickup |
 | 19 | [catholic-app](https://github.com/gandli/catholic-app) | Mobile application for Catholic believers providing Scripture reading, liturgy guides, spiritual growth tools, and community features |
-| 20 | [law-enforcement-app](https://github.com/gandli/law-enforcement-app) | Multi-modal intelligent clue management iOS app for law enforcement officers focusing on evidence collection, analysis, and case association |
+| 20 | [LeadSight](https://github.com/gandli/LeadSight) | Multi-modal intelligent clue management iOS app for law enforcement officers focusing on evidence collection, analysis, and case association |
 | 21 | [timescape-app](https://github.com/gandli/timescape-app) | Photography app combining time-travel imaging, future prediction, AR technology, and folk culture exploration |
 
 ### 📊 Stats
