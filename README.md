@@ -69,8 +69,6 @@
 | 19 | [catholic-app](https://github.com/gandli/catholic-app) | Mobile application for Catholic believers providing Scripture reading, liturgy guides, spiritual growth tools, and community features |
 | 20 | [LeadSight](https://github.com/gandli/LeadSight) | Multi-modal intelligent clue management iOS app for law enforcement officers focusing on evidence collection, analysis, and case association |
 | 21 | [timescape-app](https://github.com/gandli/timescape-app) | Photography app combining time-travel imaging, future prediction, AR technology, and folk culture exploration |
-| 22 | [CigarAtlas](https://github.com/gandli/CigarAtlas) | Community-first cigar enthusiasts platform: tasting notes, cigar journal, local meetups, humidor/inventory tracking, and social discovery |
-| 23 | [chat-export-toolkit](https://github.com/gandli/chat-export-toolkit) | AI chat export toolkit for turning conversation history into LLM-friendly Markdown/JSON assets with batch export and resume/retry workflows |
 
 ### 📊 Stats
 
@@ -83,5 +81,5 @@
 ---
 
 <p align="center">
-  <em>23 ideas, one commit at a time.</em>
+  <em>21 ideas, one commit at a time.</em>
 </p>
