@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/gandli?tab=repositories">
-    <img src="https://img.shields.io/badge/Ideas-26-blue?style=flat-square" />
+    <img src="https://img.shields.io/badge/Ideas-27-blue?style=flat-square" />
   </a>
   <a href="https://github.com/gandli?tab=followers">
     <img src="https://img.shields.io/github/followers/gandli?style=flat-square&label=Followers" />
@@ -60,20 +60,21 @@
 | 14 | [quit-smoking-dtx](https://github.com/gandli/quit-smoking-dtx) | Behavior science-based smoking cessation digital therapeutics iOS app with real-time intervention, trend analysis, and DTx compliance |
 | 15 | [social-monitoring-system](https://github.com/gandli/social-monitoring-system) | Intelligent monitoring system for illegal activities on social platforms with NLP analysis, image recognition, and network mapping |
 | 16 | [star-sage-app](https://github.com/gandli/star-sage-app) | High-performance GitHub starred repository management panel with AI-enhanced knowledge management, auto-translation, and smart tagging |
-| 17 | [url-insight](https://github.com/gandli/url-insight) | OpenClaw skill that auto-analyzes URLs — fetches content, generates structured summaries, and provides personalized action recommendations based on user context. |
-| 18 | [VoiceInputTool](https://github.com/gandli/VoiceInputTool) | Transform smartphones into USB-connected voice input devices for legacy computers, enabling multi-speaker dialogue recognition and mobile AI processing without internet |
-| 19 | [weather-in-calendar](https://github.com/gandli/weather-in-calendar) | Modern web app that seamlessly integrates weather forecasts into calendar events with ICS file generation and bilingual support |
+| 17 | [tobacco-situation-monitor](https://github.com/gandli/tobacco-situation-monitor) | Real-time OSINT-powered surveillance system for tobacco law enforcement with monitoring of door-to-door sales, vehicle transport, logistics delivery, maritime smuggling, and counterfeit production sites |
+| 18 | [url-insight](https://github.com/gandli/url-insight) | OpenClaw skill that auto-analyzes URLs — fetches content, generates structured summaries, and provides personalized action recommendations based on user context. |
+| 19 | [VoiceInputTool](https://github.com/gandli/VoiceInputTool) | Transform smartphones into USB-connected voice input devices for legacy computers, enabling multi-speaker dialogue recognition and mobile AI processing without internet |
+| 20 | [weather-in-calendar](https://github.com/gandli/weather-in-calendar) | Modern web app that seamlessly integrates weather forecasts into calendar events with ICS file generation and bilingual support |
 
 ### 💡 Ideas & Concepts
 
 | # | Project | Description |
 |---|---------|-------------|
-| 20 | [ai-goal-manager](https://github.com/gandli/ai-goal-manager) | AI-driven personal goal management tool integrating planning, journaling, reflection, and growth insights |
-| 21 | [bill-hub](https://github.com/gandli/bill-hub) | Web-based bill management and data analysis tool supporting multi-platform bill import, AI-powered spending analysis, and trend prediction |
-| 22 | [canteen-ordering-app](https://github.com/gandli/canteen-ordering-app) | Canteen ordering management system for online menu browsing, ordering, payment, and meal pickup |
-| 23 | [catholic-app](https://github.com/gandli/catholic-app) | Mobile application for Catholic believers providing Scripture reading, liturgy guides, spiritual growth tools, and community features |
-| 24 | [LeadSight](https://github.com/gandli/LeadSight) | Multi-modal intelligent clue management iOS app for law enforcement officers focusing on evidence collection, analysis, and case association |
-| 25 | [timescape-app](https://github.com/gandli/timescape-app) | Photography app combining time-travel imaging, future prediction, AR technology, and folk culture exploration |
+| 21 | [ai-goal-manager](https://github.com/gandli/ai-goal-manager) | AI-driven personal goal management tool integrating planning, journaling, reflection, and growth insights |
+| 22 | [bill-hub](https://github.com/gandli/bill-hub) | Web-based bill management and data analysis tool supporting multi-platform bill import, AI-powered spending analysis, and trend prediction |
+| 23 | [canteen-ordering-app](https://github.com/gandli/canteen-ordering-app) | Canteen ordering management system for online menu browsing, ordering, payment, and meal pickup |
+| 24 | [catholic-app](https://github.com/gandli/catholic-app) | Mobile application for Catholic believers providing Scripture reading, liturgy guides, spiritual growth tools, and community features |
+| 25 | [LeadSight](https://github.com/gandli/LeadSight) | Multi-modal intelligent clue management iOS app for law enforcement officers focusing on evidence collection, analysis, and case association |
+| 26 | [timescape-app](https://github.com/gandli/timescape-app) | Photography app combining time-travel imaging, future prediction, AR technology, and folk culture exploration |
 
 ### 📊 Stats
 
@@ -86,5 +87,5 @@
 ---
 
 <p align="center">
-  <em>25 ideas, one commit at a time.</em>
+  <em>27 ideas, one commit at a time.</em>
 </p>
