@@ -112,15 +112,14 @@
 
 ### 💡 Ideas & Concepts
 
-| Project | Description |
-|---------|-------------|
-| [ai-goal-manager](https://github.com/gandli/ai-goal-manager) | AI-driven personal goal management with journaling & reflection |
-| [canteen-ordering-app](https://github.com/gandli/canteen-ordering-app) | Canteen ordering system with online menu & payment |
-| [catholic-app](https://github.com/gandli/catholic-app) | Catholic faith app: Scripture, liturgy, spiritual growth |
-| [LeadSight](https://github.com/gandli/LeadSight) | Multi-modal clue management iOS app for law enforcement |
-| [timescape-app](https://github.com/gandli/timescape-app) | Time-travel photography app with AR & future prediction |
-| [social-monitoring-system](https://github.com/gandli/social-monitoring-system) | NLP-powered social platform monitoring for illegal activities |
-| [url-insight](https://github.com/gandli/url-insight) | OpenClaw skill for URL content analysis & recommendations |
+| # | Project | Description |
+|---|---------|-------------|
+| 20 | [ai-goal-manager](https://github.com/gandli/ai-goal-manager) | AI-driven personal goal management tool integrating planning, journaling, reflection, and growth insights |
+| 21 | [bill-hub](https://github.com/gandli/bill-hub) | Web-based bill management and data analysis tool supporting multi-platform bill import, AI-powered spending analysis, and trend prediction |
+| 22 | [canteen-ordering-app](https://github.com/gandli/canteen-ordering-app) | Canteen ordering management system for online menu browsing, ordering, payment, and meal pickup |
+| 23 | [catholic-app](https://github.com/gandli/catholic-app) | Mobile application for Catholic believers providing Scripture reading, liturgy guides, spiritual growth tools, and community features |
+| 24 | [LeadSight](https://github.com/gandli/LeadSight) | Multi-modal intelligent clue management iOS app for law enforcement officers focusing on evidence collection, analysis, and case association |
+| 25 | [timescape-app](https://github.com/gandli/timescape-app) | Photography app combining time-travel imaging, future prediction, AR technology, and folk culture exploration |
 
 ### 🚗 Enterprise & Management
 
