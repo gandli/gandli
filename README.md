@@ -130,6 +130,23 @@
 | [vehicle-management-chatui](https://github.com/gandli/vehicle-management-chatui) | Vehicle management with ChatUI interface |
 | [llmfit-web](https://github.com/gandli/llmfit-web) | LLM adaptation and deployment web platform |
 
+### 🎓 Education & Learning
+
+| Project | Description |
+|---------|-------------|
+| [OpenMAIC](https://github.com/gandli/OpenMAIC) | Open Multi-Agent Interactive Classroom — Immersive AI-powered learning |
+| [amap-skills](https://github.com/gandli/amap-skills) | 高德地图 JSAPI v2.0 AI 编程技能包 - npx skills install |
+| [amap-skills-1](https://github.com/gandli/amap-skills-1) | 高德地图 JSAPI AI 编程技能包 - 让 AI IDE 自动生成合规地图代码 |
+
+### 🧠 AI Skills & Extensions
+
+| Project | Description |
+|---------|-------------|
+| [extensions](https://github.com/gandli/extensions) | Raycast extensions collection |
+| [skills-1](https://github.com/gandli/skills-1) | The open agent skills tool - npx skills |
+| [jules-skills](https://github.com/gandli/jules-skills) | Google Jules AI agent skills |
+| [Qwen3-Coder](https://github.com/gandli/Qwen3-Coder) | Qwen3 code generation model |
+
 ### 📦 Package Management Contributions
 
 Contributing to community package managers:
