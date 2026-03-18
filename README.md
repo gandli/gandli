@@ -135,8 +135,6 @@
 | Project | Description |
 |---------|-------------|
 | [OpenMAIC](https://github.com/gandli/OpenMAIC) | Open Multi-Agent Interactive Classroom — Immersive AI-powered learning |
-| [amap-skills](https://github.com/gandli/amap-skills) | 高德地图 JSAPI v2.0 AI 编程技能包 - npx skills install |
-| [amap-skills-1](https://github.com/gandli/amap-skills-1) | 高德地图 JSAPI AI 编程技能包 - 让 AI IDE 自动生成合规地图代码 |
 
 ### 🧠 AI Skills & Extensions
 
