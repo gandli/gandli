@@ -121,6 +121,8 @@
 | 24 | [LeadSight](https://github.com/gandli/LeadSight) | Multi-modal intelligent clue management iOS app for law enforcement officers focusing on evidence collection, analysis, and case association |
 | 25 | [timescape-app](https://github.com/gandli/timescape-app) | Photography app combining time-travel imaging, future prediction, AR technology, and folk culture exploration |
 
+📄 **In-repo design docs & research notes:** [`docs/`](./docs/) — living design docs for projects still in incubation (tg-hermes-blog, local-proofread-extension, ai-bookmark-organizer, honor-adb-automation) and research surveys (eSIM tooling, Honor root status).
+
 ### 🚗 Enterprise & Management
 
 | Project | Description |
