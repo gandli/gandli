@@ -10,6 +10,7 @@ A living archive of design docs for projects in incubation, and research notes f
 | 2 | [local-proofread-extension](./ideas/local-proofread-extension.md) — Chrome MV3 + WebGPU + Qwen2 offline proofreading | 📐 Diagrams done |
 | 3 | [ai-bookmark-organizer](./ideas/ai-bookmark-organizer.md) — Local-LLM Chrome extension that classifies + dedupes bookmarks | 📐 Diagrams done |
 | 4 | [honor-adb-automation](./ideas/honor-adb-automation.md) — Automate a Honor X80 Pro Max home screen from Mac via ADB | 💭 Concept |
+| 5 | [rl-paint-with-code](./ideas/rl-paint-with-code.md) — RL-train a model to paint via p5.brush JS code | 💭 Abandoned (no GPU) |
 
 ## 🔬 Research — ecosystem landscape notes
 
