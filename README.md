@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/gandli?tab=repositories">
-    <img src="https://img.shields.io/badge/Public_Repos-90+-blue?style=flat-square" />
+    <img src="https://img.shields.io/badge/Public_Repos-80+-blue?style=flat-square" />
   </a>
   <a href="https://github.com/gandli?tab=followers">
     <img src="https://img.shields.io/github/followers/gandli?style=flat-square&label=Followers" />
@@ -39,7 +39,7 @@
 
 ## 🚀 Featured Projects
 
-> A curated selection from 90+ public repos. Full list: [gandli?tab=repositories](https://github.com/gandli?tab=repositories)
+> A curated selection from 80+ public repos. Full list: [gandli?tab=repositories](https://github.com/gandli?tab=repositories)
 
 ### 🔐 Security & CTF (core focus)
 
@@ -56,6 +56,9 @@
 | [burpsuite-extension-skill](https://github.com/gandli/burpsuite-extension-skill) | Burp Suite extension development skill for OpenCode |
 | [cybersecurity-aggregator](https://github.com/gandli/cybersecurity-aggregator) | Real-time threat intelligence hub |
 | [bird-shield-blocking](https://github.com/gandli/bird-shield-blocking) | Shared blocklist for Twitter Bird Shield extension |
+| [dbrecon](https://github.com/gandli/dbrecon) | Database security reconnaissance tool (authorized testing / education) |
+| [yctf](https://github.com/gandli/yctf) | Modern open-source CTF competition platform (烟起旗扬) |
+| [hongminggu-ctf-2026-writeups](https://github.com/gandli/hongminggu-ctf-2026-writeups) | 2026 Digital China Innovation Contest & Sanming Hongminggu Cup CTF writeups |
 
 ### 🦞 OpenClaw Ecosystem
 
@@ -68,6 +71,8 @@
 | [openclaw.ai](https://github.com/gandli/openclaw.ai) | Official website of openclaw.ai |
 | [openclaw-gateway-repairer](https://github.com/gandli/openclaw-gateway-repairer) | Auto-repair script for OpenClaw Gateway |
 | [obsd](https://github.com/gandli/obsd) | Personal knowledge base with PARA structure |
+| [openclaw-security-validation](https://github.com/gandli/openclaw-security-validation) | Security validation tools and test suites for OpenClaw deployments |
+| [url-insight](https://github.com/gandli/url-insight) | OpenClaw skill that auto-analyzes URLs — structured summaries + personalized actions |
 
 ### 🛠️ Developer Tools & Infra
 
@@ -84,6 +89,15 @@
 | [markdown-viewer-extension](https://github.com/gandli/markdown-viewer-extension) | Markdown to Word converter with Mermaid/LaTeX support |
 | [brew-backup](https://github.com/gandli/brew-backup) | Homebrew backup and sync utility |
 | [memorable-password-generator](https://github.com/gandli/memorable-password-generator) | Generate memorable, secure passwords |
+| [daily-digest](https://github.com/gandli/daily-digest) | GitHub Trending → Telegram daily Chinese digest bot on Cloudflare Workers free tier |
+| [daily-digest-archive](https://github.com/gandli/daily-digest-archive) | Auto-generated daily archive for daily-digest bot |
+| [picwall](https://github.com/gandli/picwall) | Local-first polaroid photo wall — drag-and-drop uploads, masonry layout, in-browser AI captioning |
+| [bookmarks](https://github.com/gandli/bookmarks) | Browser bookmarks backup (Chrome/Edge JSON) |
+| [proxy-app-list](https://github.com/gandli/proxy-app-list) | 全平台代理客户端精选列表（归档） |
+| [readme.skill](https://github.com/gandli/readme.skill) | standard-readme specification encoded as an agent skill |
+| [data-annotation-course](https://github.com/gandli/data-annotation-course) | 数据标注课程自动化解题脚本 |
+| [homebrew-opencli-rs](https://github.com/gandli/homebrew-opencli-rs) | Homebrew tap for opencli-rs |
+| [scoop-motrix-next](https://github.com/gandli/scoop-motrix-next) | Scoop bucket for Motrix Next |
 
 ### 🌐 Web, Typing & Visual
 
@@ -94,6 +108,10 @@
 | [tw-metro-typing-zh-cn](https://github.com/gandli/tw-metro-typing-zh-cn) | Taiwan MRT station typing practice, Simplified-Chinese localized |
 | [cardia-survey](https://github.com/gandli/cardia-survey) | Beating-heart medical visualization (localized + mobile-adapted) |
 | [phoenix-crown](https://github.com/gandli/phoenix-crown) | Chinese character "phoenix crown" curtain — pretext real glyph width + verlet physics |
+| [cig3d](https://github.com/gandli/cig3d) | 中国香烟 3D 交互式真伪鉴别工具（React Three Fiber） |
+| [world-cup-letter-flags-zh-cn](https://github.com/gandli/world-cup-letter-flags-zh-cn) | 四强字母旗 · 2026 世界杯四强 26 人大名单字母帘幕互动装置 (简体中文本地化) |
+| [llmfit-web](https://github.com/gandli/llmfit-web) | LLM model fitness tracking and visualization web platform |
+| [gandli.github.io](https://github.com/gandli/gandli.github.io) | 🦞 Lobster Diary — Daily work journal, Hugo-powered with auto cover art + TTS audio |
 
 ### 🤖 AI Browser Extensions
 
@@ -103,6 +121,8 @@
 | [readto-chrome-extension](https://github.com/gandli/readto-chrome-extension) | Chrome extension adding Chinese annotations above English words by CEFR level |
 | [docx-reviewer](https://github.com/gandli/docx-reviewer) | Local LLM-powered DOCX review tool (semantic search, revision tracking) |
 | [chrome-bookmark-extension](https://github.com/gandli/chrome-bookmark-extension) | Bookmark management with dead link detection & AI tag generation |
+| [chinese-proofread](https://github.com/gandli/chinese-proofread) | 本地离线中文智能校对扩展 — MacBERT4CSC ONNX (114MB Q8), WebGPU, 零数据上传 |
+| [writing-polisher-extension](https://github.com/gandli/writing-polisher-extension) | Pure browser-side Chinese spelling correction — 100% offline ONNX Runtime Web |
 
 ### 🚬 Tobacco & Cigar / 🏥 Health
 
@@ -113,6 +133,8 @@
 | [ciggies-crawler](https://github.com/gandli/ciggies-crawler) | Web crawler for ciggies.app product data |
 | [ai-nutritionist-app](https://github.com/gandli/ai-nutritionist-app) | AI-driven nutrition management with drug-nutrition interaction detection |
 | [quit-smoking-dtx](https://github.com/gandli/quit-smoking-dtx) | Behavior science-based smoking cessation iOS app (DTx) |
+| [cttc-auto-learn](https://github.com/gandli/cttc-auto-learn) | Automated video learning for China Tobacco's online training platform (mooc.ctt.cn) |
+| [vehicle-management-chatui](https://github.com/gandli/vehicle-management-chatui) | Vehicle fleet management system with ChatUI interface |
 
 ### 📱 Mobile & Web Apps
 
@@ -124,6 +146,9 @@
 | [bill-hub](https://github.com/gandli/bill-hub) | Multi-platform bill management with AI-powered spending analysis |
 | [chinese-characters-learner](https://github.com/gandli/chinese-characters-learner) | Learn 7,000 common Chinese characters with quiz modes |
 | [star-sage-app](https://github.com/gandli/star-sage-app) | GitHub starred repo management with AI-enhanced knowledge base |
+| [med-mate-app](https://github.com/gandli/med-mate-app) | Localized health management for chronic disease — medication, symptom tracking, follow-up reminders |
+| [VoiceInputTool](https://github.com/gandli/VoiceInputTool) | Transform your smartphone into a USB-connected voice input device |
+| [canteen-ordering-app](https://github.com/gandli/canteen-ordering-app) | Canteen ordering management system — menu browsing, ordering, payment, meal pickup |
 
 ### 💡 Ideas & Concepts
 
@@ -134,6 +159,14 @@
 | [LeadSight](https://github.com/gandli/LeadSight) | Multi-modal clue management iOS app for law enforcement |
 | [unit-dispatch](https://github.com/gandli/unit-dispatch) | Unit dispatch management system |
 | [OpenMAIC](https://github.com/gandli/OpenMAIC) | Open Multi-Agent Interactive Classroom |
+| [anatomy-3d-explorer](https://github.com/gandli/anatomy-3d-explorer) | Interactive 3D human anatomy explorer built with Three.js — procedural geometry, layered dissection |
+| [cigarette-code-registration](https://github.com/gandli/cigarette-code-registration) | Mini-program for cigarette spray-code registration — 16 digits + 4 letters + 12 digits |
+| [crime-scene-3dgs](https://github.com/gandli/crime-scene-3dgs) | 3D Gaussian Splatting for tobacco enforcement crime-scene digitization |
+| [fake-tobacco-network-graph](https://github.com/gandli/fake-tobacco-network-graph) | Graph analysis of counterfeit tobacco sales networks — attack-chain modeling for illicit trade investigation |
+| [min-dialect-research](https://github.com/gandli/min-dialect-research) | Min dialect (Fuzhou/闽语) research toolkit — phonology, lexicon, IPA transcription, corpus analysis |
+| [tobacco-rag-assistant](https://github.com/gandli/tobacco-rag-assistant) | RAG-powered assistant for tobacco monopoly inspection — regulations, case precedents, industry knowledge |
+| [social-monitoring-system](https://github.com/gandli/social-monitoring-system) | Intelligent monitoring of illegal activities on social platforms — NLP analysis, image recognition, network mapping |
+| [timescape-app](https://github.com/gandli/timescape-app) | Photography app combining time-travel imaging, future prediction, AR, and folk culture exploration |
 
 ### 📦 Package Management Contributions
 
@@ -157,7 +190,7 @@ Contributing to community package managers:
 
 <p align="center">
   <a href="https://github.com/gandli?tab=repositories">
-    <img src="https://img.shields.io/badge/Public_Repos-90+-blue?style=flat-square" alt="Public Repositories" />
+    <img src="https://img.shields.io/badge/Public_Repos-80+-blue?style=flat-square" alt="Public Repositories" />
   </a>
   <img src="https://img.shields.io/badge/Forks_incl-19+-lightgrey?style=flat-square" alt="Forks" />
 </p>
