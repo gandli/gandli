@@ -1,17 +1,15 @@
-<h1 align="center">Hey 👋, I'm gandli</h1>
-
 <p align="center">
-  <strong>Cybersecurity Enthusiast · Full-Stack Tinkerer · AI-Powered Builder</strong>
+  <img src="./assets/readme/hero.svg" width="100%" alt="gandli — Cybersecurity Enthusiast · Full-Stack Tinkerer · AI-Powered Builder" />
 </p>
 
 <p align="center">
   <a href="https://github.com/gandli?tab=repositories">
-    <img src="https://img.shields.io/badge/Public_Repos-80+-blue?style=flat-square" />
+    <img src="https://img.shields.io/badge/Public_Repos-80+-blue?style=flat-square" alt="Public Repos" />
   </a>
   <a href="https://github.com/gandli?tab=followers">
-    <img src="https://img.shields.io/github/followers/gandli?style=flat-square&label=Followers" />
+    <img src="https://img.shields.io/github/followers/gandli?style=flat-square&label=Followers" alt="Followers" />
   </a>
-  <img src="https://komarev.com/ghpvc/?username=gandli&style=flat-square&color=grey" />
+  <img src="https://komarev.com/ghpvc/?username=gandli&style=flat-square&color=grey" alt="Profile Views" />
 </p>
 
 ---
@@ -36,6 +34,13 @@
 ![Chrome Extensions](https://img.shields.io/badge/-Chrome_Extensions-4285F4?style=flat-square&logo=googlechrome&logoColor=white)
 
 ---
+
+<!--
+START_SECTION:PROJECTS
+Maintained by the Update README Projects workflow (scripts/update-readme.py).
+It appends missing repos to the Ideas table only; all other tables are hand-curated.
+END_SECTION:PROJECTS
+-->
 
 ## 🚀 Featured Projects
 
