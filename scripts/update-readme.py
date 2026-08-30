@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
-"""Auto-update README project tables based on repo topics.
+"""Incrementally append repos missing from the README into the Ideas & Concepts table.
 
-Repos are categorized by topics:
-  - "shipped"        → 🚀 Shipped
-  - "in-development" → 🔧 In Development
-  - "idea"           → 💡 Ideas & Concepts
+The README's domain sections are hand-curated — this script never touches them.
+It only finds repos not yet linked anywhere in README.md and appends them to the
+Ideas section, sorted by name. Idempotent: already-listed repos are skipped.
+
+Run in CI with GH_TOKEN set; the workflow handles branch/PR creation (never push main).
+
+# ponytail: appends everything to Ideas regardless of category. Proper domain
+# placement needs topic→section mapping — add when the Ideas bucket gets large.
 """
 
 import json
@@ -13,82 +17,61 @@ import subprocess
 import sys
 
 OWNER = "gandli"
+README = "README.md"
+IDEAS_HEADER = "### 💡 Ideas & Concepts"
+NEXT_SECTION = "### 📦 Package Management Contributions"
 
 
-def get_repos():
-    """Fetch all non-fork public repos via list endpoint (works with GITHUB_TOKEN)."""
+def fetch_repos():
     result = subprocess.run(
         ["gh", "api", "--paginate", f"users/{OWNER}/repos?per_page=100&type=public"],
-        capture_output=True, text=True
+        capture_output=True, text=True, check=True,
     )
-    try:
-        repos = json.loads(result.stdout)
-    except json.JSONDecodeError:
-        # --paginate may concat multiple JSON arrays, handle that
-        text = result.stdout.strip()
-        if text.startswith("[") and "][" in text:
-            text = text.replace("][", ",")
-        repos = json.loads(text)
+    text = result.stdout.strip()
+    if text.startswith("[") and "][" in text:  # --paginate may concat arrays
+        text = text.replace("][", ",")
+    return json.loads(text)
 
-    out = {"shipped": [], "in-development": [], "idea": []}
+
+def listed_names(readme):
+    return set(re.findall(r"github\.com/gandli/([a-zA-Z0-9_.-]+)", readme))
+
+
+def missing_entries(repos, listed):
+    out = []
     for r in repos:
-        if r.get("fork") or r["name"] == OWNER:
+        name = r["name"]
+        if r.get("fork") or name == OWNER or name in listed:
             continue
-        topics = r.get("topics") or []
-        if "skip-readme" in topics:
+        if "skip-readme" in (r.get("topics") or []):
             continue
-        entry = {
-            "name": r["name"],
-            "description": r.get("description") or r["name"],
-            "html_url": r["html_url"],
-        }
-        for cat in out:
-            if cat in topics:
-                out[cat].append(entry)
-                break
-
-    for cat in out:
-        out[cat].sort(key=lambda x: x["name"].lower())
+        out.append((name, r.get("description") or name))
+    out.sort(key=lambda x: x[0].lower())
     return out
 
 
-def build_table(entries, start_num=1):
-    if not entries:
-        return "| # | Project | Description |\n|---|---------|-------------|\n| - | *Nothing yet* | — |\n"
-    lines = ["| # | Project | Description |", "|---|---------|-------------|"]
-    for i, e in enumerate(entries, start=start_num):
-        lines.append(f'| {i} | [{e["name"]}]({e["html_url"]}) | {e["description"]} |')
-    return "\n".join(lines) + "\n"
-
-
-def update_readme(cats):
-    with open("README.md", "r") as f:
-        content = f.read()
-
-    def replace_section(content, header, table):
-        pattern = rf"(### {re.escape(header)}\n\n)\|.*?(?=\n###|\n---|\Z)"
-        return re.sub(pattern, rf"\1{table}", content, flags=re.DOTALL)
-
-    num = 1
-    for header, key in [("🚀 Shipped", "shipped"), ("🔧 In Development", "in-development"), ("💡 Ideas & Concepts", "idea")]:
-        content = replace_section(content, header, build_table(cats[key], num))
-        num += len(cats[key])
-
-    total = sum(len(v) for v in cats.values())
-    content = re.sub(r'\d+ ideas, one commit at a time', f'{total} ideas, one commit at a time', content)
-    content = re.sub(r'Ideas-\d+-blue', f'Ideas-{total}-blue', content)
-
-    with open("README.md", "w") as f:
-        f.write(content)
-    return total
+def append_ideas(readme, entries):
+    header_pos = readme.index(IDEAS_HEADER)
+    next_pos = readme.index(NEXT_SECTION, header_pos)
+    rows = "".join(
+        f"| [{name}](https://github.com/{OWNER}/{name}) | {desc} |\n"
+        for name, desc in entries
+    )
+    return readme[:next_pos] + rows + "\n" + readme[next_pos:]
 
 
 def main():
-    cats = get_repos()
-    print(f"📦 Found: {len(cats['shipped'])} shipped, {len(cats['in-development'])} in-dev, {len(cats['idea'])} ideas")
-    total = update_readme(cats)
-    print(f"✅ README updated with {total} projects")
+    readme = open(README).read()
+    entries = missing_entries(fetch_repos(), listed_names(readme))
+    if not entries:
+        print("No missing repos — README is up to date")
+        return 0
+    open(README, "w").write(append_ideas(readme, entries))
+    print(f"Appended {len(entries)} repos to Ideas section:")
+    for name, _ in entries:
+        print(f"  {name}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
